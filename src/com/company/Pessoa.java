@@ -10,9 +10,10 @@ public abstract class Pessoa {
 
     //Métodos construtores
 
-    public Pessoa (){
+    public Pessoa() {
 
     }
+
     public Pessoa(String nome, String endereco, String telefone) {
         this.nome = nome;
         this.endereco = endereco;
@@ -47,19 +48,19 @@ public abstract class Pessoa {
 
     //Método para nome
 
-    public String nome (){
+    public String nome() {
         return nome;
     }
 
     //Método para endereço
 
-    public String endereço (){
+    public String endereço() {
         return endereco;
     }
 
     //Método para telefone
 
-    public String telefone(){
+    public String telefone() {
         return telefone;
     }
 

@@ -1,11 +1,18 @@
 package com.company;
 
-public class Colaborador extends Pessoa{
+public class Colaborador extends Pessoa {
+
+    //Atributos
+
     private int codigoSetor;
     private double salarioBase;
     private double imposto;
 
-    //Método construtor
+    //Método construtores
+
+    public Colaborador() {
+
+    }
 
     public Colaborador(String nome, String endereco, String telefone, int codigoSetor, double salarioBase, double imposto) {
         super(nome, endereco, telefone);
@@ -15,7 +22,6 @@ public class Colaborador extends Pessoa{
     }
 
     //Métodos getters e setters
-
 
     public int getCodigoSetor() {
         return codigoSetor;
@@ -43,8 +49,7 @@ public class Colaborador extends Pessoa{
 
     //Método calcular salário
 
-
-    public double calcularSalario(){
+    public double calcularSalario() {
         return salarioBase - imposto;
     }
 }

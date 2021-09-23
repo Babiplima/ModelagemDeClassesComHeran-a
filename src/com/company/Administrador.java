@@ -1,12 +1,12 @@
 package com.company;
 
-public class Administrador extends Colaborador{
+public class Administrador extends Colaborador {
 
     //Atributos
+
     private double ajudaDeCusto;
 
-    //Método construtor
-
+    //Métodos construtores
 
     public Administrador(String nome, String endereco, String telefone, int codigoSetor, double salarioBase, double imposto, double ajudaDeCusto) {
         super(nome, endereco, telefone, codigoSetor, salarioBase, imposto);
@@ -15,7 +15,6 @@ public class Administrador extends Colaborador{
 
     //Métodos Getters e Setters
 
-
     public double getAjudaDeCusto() {
         return ajudaDeCusto;
     }
@@ -23,8 +22,9 @@ public class Administrador extends Colaborador{
     public void setAjudaDeCusto(double ajudaDeCusto) {
         this.ajudaDeCusto = ajudaDeCusto;
     }
+
     @Override
-    public double calcularSalario(){
-        return getSalarioBase()- getImposto() + ajudaDeCusto;
+    public double calcularSalario() {
+        return getSalarioBase() - getImposto() + ajudaDeCusto;
     }
 }

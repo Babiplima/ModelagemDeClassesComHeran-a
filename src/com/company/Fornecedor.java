@@ -1,19 +1,25 @@
 package com.company;
 
-public class Fornecedor extends Pessoa{
+public class Fornecedor extends Pessoa {
 
     //Atributos
 
     private double valorCredito;
     private double valorDivida;
 
-    //Método construtor
+    //Métodos construtores
+
+    public Fornecedor() {
+
+    }
 
     public Fornecedor(String nome, String endereco, String telefone, double valorCredito, double valorDivida) {
         super(nome, endereco, telefone);
         this.valorCredito = valorCredito;
         this.valorDivida = valorDivida;
     }
+
+    //Métodos Getters e Setters
 
     public double getValorCredito() {
         return valorCredito;
@@ -33,7 +39,7 @@ public class Fornecedor extends Pessoa{
 
     //Método Obter Saldo
 
-    public double obterSaldo(){
+    public double obterSaldo() {
         return valorCredito - valorDivida;
     }
 
